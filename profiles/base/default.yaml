@@ -33,10 +33,10 @@ spec:
         resources:
           limits:
             cpu: 2000m
-            memory: 1024Mi
+            memory: 2Gi
           requests:
             cpu: 100m
-            memory: 128Mi
+            memory: 1Gi
         service:
           ports:
           - name: http2
@@ -74,10 +74,10 @@ spec:
         resources:
           limits:
             cpu: 2000m
-            memory: 1024Mi
+            memory: 2Gi
           requests:
             cpu: 100m
-            memory: 128Mi
+            memory: 1Gi
         service:
           ports:
           - name: status-port
@@ -176,10 +176,10 @@ spec:
         resources:
           limits:
             cpu: 4800m
-            memory: 4G
+            memory: 5G
           requests:
             cpu: 1000m
-            memory: 1G
+            memory: 2G
         strategy:
           rollingUpdate:
             maxSurge: 100%
@@ -288,10 +288,10 @@ spec:
         resources:
           limits:
             cpu: 2000m
-            memory: 1024Mi
+            memory: 2Gi
           requests:
             cpu: 100m
-            memory: 128Mi
+            memory: 1Gi
         statusPort: 15020
         tracer: zipkin
       proxy_init:
@@ -299,10 +299,10 @@ spec:
         resources:
           limits:
             cpu: 2000m
-            memory: 1024Mi
+            memory: 2Gi
           requests:
             cpu: 10m
-            memory: 10Mi
+            memory: 1Gi
       sds:
         token:
           aud: istio-ca
@@ -513,7 +513,7 @@ spec:
             memory: 2Gi
           requests:
             cpu: 200m
-            memory: 400Mi
+            memory: 1Gi
         tag: 0.1.9
       podAntiAffinityLabelSelector: []
       podAntiAffinityTermLabelSelector: []
