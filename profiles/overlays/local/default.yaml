@@ -5,6 +5,12 @@ metadata:
   name: istio-default
 spec:
   profile: default
+  components:
+    pilot:
+      k8s:
+        resources:
+          requests:
+            memory: 3072Mi
   addonComponents:
     prometheus:
       enabled: true
