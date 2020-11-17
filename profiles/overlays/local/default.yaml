@@ -6,11 +6,11 @@ metadata:
 spec:
   profile: default
   components:
-    pilot:
       k8s:
         resources:
           requests:
-            memory: 3072Mi
+          cpu: 2Mi
+          memory: 64Mi
   addonComponents:
     prometheus:
       enabled: true
