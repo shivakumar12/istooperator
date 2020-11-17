@@ -4,9 +4,9 @@ namespace: istio-system
 bases:
   - ../../base/
 resources:
-  - kiali-ingress.yaml
-  - prometheus-ingress.yaml
-  - grafana-ingress.yaml
-  - jaeger-ingress.yaml
+  - kiali-lb.yaml
+  - prometheus-lb.yaml
+  - grafana-lb.yaml
+  - jaeger-lb.yaml
 patchesStrategicMerge:
   - default.yaml
