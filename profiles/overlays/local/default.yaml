@@ -1,0 +1,16 @@
+apiVersion: install.istio.io/v1alpha1
+kind: IstioOperator
+metadata:
+  namespace: istio-system
+  name: istio-default
+spec:
+  profile: default
+  addonComponents:
+    prometheus:
+      enabled: true
+    kiali:
+      enabled: true
+    tracing:
+      enabled: true
+    grafana:
+      enabled: true
