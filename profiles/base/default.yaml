@@ -32,11 +32,11 @@ spec:
             name: istio-egressgateway
         resources:
           limits:
-            cpu: 2000m
-            memory: 1024Mi
+            cpu: 4000m
+            memory: 2048Mi
           requests:
             cpu: 100m
-            memory: 128Mi
+            memory: 512Mi
         service:
           ports:
           - name: http2
